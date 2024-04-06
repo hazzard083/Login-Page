@@ -1,0 +1,20 @@
+.btn {
+  width: 100%;
+  padding: 16px 24px;
+  display: inline-block;
+
+  background-color: var(--purple);
+  border-radius: 4px;
+  border: none;
+
+  /* TEXT */
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: #9F67FF;
+  transition: all 0.3s ease-out;
+}

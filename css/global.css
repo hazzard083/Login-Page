@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--white);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--purple);
+}
+
+main {
+  height: 84vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading-m {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--gray-800);
+}
+
+.text-sm {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--gray-600);
+}
+
+.label-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-input{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.label-verify {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #ED3A5A;
+}
+
+/* U */
+
+.image__bg {
+
+  position: fixed;
+  left: 50%;
+  bottom: -1%;
+}
+
+.content {
+  max-width: 384px;
+  margin: 0 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.content__texts {
+  max-width: 351px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs__button {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.inputs__group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input__login {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input_password {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.eye {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 32%;
+  right: 5%;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .image__bg {
+    display: none
+  }
+
+  .content {
+    padding: 3rem;
+    margin: 0 auto;
+  }
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Vertigo</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/extends.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="header__logo">
+        <img src="assets/logo.svg" />
+      </div>
+    </header>
+    <main>
+      <section class="content">
+        <section class="image__bg">
+          <img src="assets/img.png" />
+        </section>
+        <section class="content__texts">
+          <h1 class="heading-m">Acesse a plataforma</h1>
+          <p class="text-sm">
+            Faça login ou registre-se para começar a construir seus projetos
+            ainda hoje.
+          </p>
+        </section>
+        <section class="inputs__button">
+          <section class="inputs__group">
+            <div class="input__login">
+              <label class="label-input" for="email">E-mail</label>
+              <input
+                onblur="validarEmail()"
+                onfocus="redefinirMsg()"
+                id="email"
+                class="input__field"
+                type="email"
+                placeholder="Digite seu e-mail"
+              />
+              <label class="label-verify" id="error"></label>
+            </div>
+            <div class="input__login">
+              <div class="label-wrapper">
+                <label class="label-input" for="password">Senha</label>
+                <a class="label-input link" href="/">Esqueceu sua Senha?</a>
+              </div>
+              <div class="input_password">
+                <input
+                  id="password"
+                  class="input__field"
+                  type="password"
+                  placeholder="Digite sua senha"
+                />
+                <img
+                  onclick="togglePassword()"
+                  class="eye"
+                  src="./assets/eye-off.svg"
+                />
+                <img
+                  onclick="togglePassword()"
+                  class="eye hide"
+                  src="./assets/eye.svg"
+                />
+              </div>
+            </div>
+          </section>
+          <button class="btn">Entrar</button>
+          <p class="text-sm">
+            Ainda não tem uma conta? <a class="link color" href="/">Inscreva-se</a>
+          </p>
+        </section>
+      </section>
+    </main>
+  </body>
+  <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+  <script src="scripts/password.js"></script>
+  <script src="scripts/verifyEmail.js"></script>
+</html>

@@ -1,0 +1,7 @@
+@import './global.css';
+@import './variables.css';
+
+@import './components/input.css';
+@import './components/button.css';
+@import './components/header.css';
+@import './components/link.css';
